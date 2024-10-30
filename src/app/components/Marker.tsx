@@ -1,4 +1,10 @@
-export const Marker = ({ fill }) => {
+
+interface MarkerProps {
+  fill?: string;
+}
+
+
+export const Marker:React.FC<MarkerProps>= ({ fill }) => {
   return (
     <svg
       width="8"

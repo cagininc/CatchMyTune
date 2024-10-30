@@ -1,6 +1,16 @@
 import clsx from "clsx";
+import Image from "next/image";
 
-const TestimonialItem = ({ item, containerClassName }) => {
+interface TestimonialItemProps {
+  item: {
+    comment: string;
+    avatarUrl: string;
+    name: string;
+    role: string;
+  };
+  containerClassName?: string;
+}
+const TestimonialItem:React.FC<TestimonialItemProps> = ({ item, containerClassName }) => {
   return (
     <div
       className={clsx(
@@ -12,7 +22,7 @@ const TestimonialItem = ({ item, containerClassName }) => {
 
       <div className="flex items-center max-xl:-mr-8">
         <div className="mr-4 size-20 shrink-0 rounded-half border-2 border-s2 p-1.5">
-          <img
+          <Image
             src={item.avatarUrl}
             alt={item.name}
             className="size-full object-cover"
