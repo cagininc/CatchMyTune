@@ -1,6 +1,6 @@
 "use client"
 // import { Element } from "react-scroll";
-import { Upload, Link as LinkIcon } from "lucide-react"; // Lucide ikonları
+import { Upload, Link as LinkIcon } from "lucide-react"; // Lucide icons
 import { ChangeEvent,  useState } from "react";
 import Button from "../components/Button";
 import { AudioLines } from 'lucide-react';
@@ -14,9 +14,9 @@ const Features = () => {
 
   const handleUpload = () => {
     if (file) {
-      console.log("Dosya yüklendi:", file.name);
+      console.log("File uploaded", file.name);
     } else if (spotifyLink) {
-      console.log("Spotify linki yüklendi:", spotifyLink);
+      console.log("logged:", spotifyLink);
     }
   };
 
