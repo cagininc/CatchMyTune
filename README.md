@@ -1,14 +1,13 @@
 # 🎶 Catch My Tune
 
-**Catch My Tune** is an innovative application that allows users to upload and analyze audio files or add Spotify links to obtain details such as the song’s key, tempo, and more.
+Catch My Tune: An innovative music analysis platform where users can search for their favorite songs, explore detailed analytics, and share insights directly to Instagram Stories.
 
-The project is designed to provide a seamless, fast, and secure music analysis experience.
-
-## 🚀 About the Project
-
-Catch My Tune is built on a user-friendly interface and a powerful infrastructure. It accepts music uploads and utilizes advanced algorithms to provide detailed insights for each track. The project is deployed on AWS Amplify, ensuring reliability and speed.
+With Spotify API integration, users can search for any track and access in-depth analysis metrics such as danceability, key, BPM, and more, bringing music insights to life. Results are easily shareable to Instagram Stories, allowing users to connect and share their musical experiences instantly.
 
 **You can view the live frontend here**: [Catch My Tune Live](https://main.d22mdftw8wj1aj.amplifyapp.com/)
+
+
+
 
 ## 🛠️ Technologies Used
 
@@ -22,7 +21,7 @@ Catch My Tune leverages the following technologies:
 - **Tailwind CSS**: Enables rapid, consistent styling with flexibility in design.
 
 ## 📈 Features
-
+- **Spotify Search Bar**: Allows users to search songs  for analysis.
 - **Audio File Upload**: Allows users to upload audio files for analysis.
 - **Spotify Link Support**: Accepts Spotify links to provide detailed track insights.
 - **Key & Tempo Analysis**: Displays information on key, tempo, and other attributes for each uploaded or linked song.
