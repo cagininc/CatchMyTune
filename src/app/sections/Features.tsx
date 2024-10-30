@@ -76,7 +76,8 @@ const Features = () => {
 
               {/* Yükleme Butonu */}
               <div className="flex justify-center">
-                <Button   onClick={handleUpload} icon={<Upload />}>
+                <Button   onClick={handleUpload} >
+                
                 Upload & Analyze 
                    <div className="flex justify-center gap-2"><AudioLines /> </div>
                 </Button>
