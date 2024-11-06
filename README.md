@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎶 Catch My Tune
 
-## Getting Started
+Catch My Tune: An innovative music analysis platform where users can search for their favorite songs, explore detailed analytics, and share insights directly to Instagram Stories.
 
-First, run the development server:
+With Spotify API integration, users can search for any track and access in-depth analysis metrics such as danceability, key, BPM, and more, bringing music insights to life. Results are easily shareable to Instagram Stories, allowing users to connect and share their musical experiences instantly.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**You can view the live frontend here**: [Catch My Tune Live](https://main.d22mdftw8wj1aj.amplifyapp.com/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Screenshots
+![FocusFlow Dashboard](/ui-test.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Technologies Used
 
-## Learn More
+Catch My Tune leverages the following technologies:
 
-To learn more about Next.js, take a look at the following resources:
+- **React**: For the component-based structure and user interface.
+- **Next.js**: Provides SSR (Server-Side Rendering) and dynamic routing, enhancing performance and SEO.
+- **TypeScript**: Ensures safer, scalable development with type support.
+- **AWS Amplify**: Facilitates quick and easy deployment.
+- **Lucide React Icons**: Adds meaningful and aesthetic icons to enrich the user interface.
+- **Tailwind CSS**: Enables rapid, consistent styling with flexibility in design.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📈 Features
+- **Spotify Search Bar**: Allows users to search songs  for analysis.
+- **Audio File Upload**: Allows users to upload audio files for analysis.
+- **Spotify Link Support**: Accepts Spotify links to provide detailed track insights.
+- **Key & Tempo Analysis**: Displays information on key, tempo, and other attributes for each uploaded or linked song.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔮 Planned Features
 
-## Deploy on Vercel
+To enhance the functionality and user experience, here are some additional features planned for future versions:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Detailed Audio Insights**: Adding more in-depth metrics like BPM, genre prediction, and mood analysis to expand the audio insights available.
+- **Social Sharing**: Enable users to share their results on social media platforms directly from the app.
+- **Mobile Responsiveness**: Optimizing for mobile devices to ensure a smooth experience across all screen sizes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Deployment
+
+Catch My Tune is deployed on **AWS Amplify**, providing high performance, security, and a reliable user experience. AWS Amplify’s CI/CD integration ensures the application stays up-to-date with the latest changes.
+
+## 📂 Installation & Running Locally
+
+To run the project on your local machine:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/username/catch-my-tune.git
+   cd catch-my-tune
