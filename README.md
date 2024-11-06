@@ -6,7 +6,8 @@ With Spotify API integration, users can search for any track and access in-depth
 
 **You can view the live frontend here**: [Catch My Tune Live](https://main.d22mdftw8wj1aj.amplifyapp.com/)
 
-
+## Screenshots
+![FocusFlow Dashboard](/ui-test.png)
 
 
 ## 🛠️ Technologies Used
