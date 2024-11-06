@@ -24,7 +24,8 @@ const TestimonialItem:React.FC<TestimonialItemProps> = ({ item, containerClassNa
         <div className="mr-4 size-20 shrink-0 rounded-half border-2 border-s2 p-1.5">
           <Image
             src={item.avatarUrl}
-            alt={item.name}
+            alt={item.name}width={100}  
+            height={100} 
             className="size-full object-cover"
           />
         </div>

@@ -27,6 +27,9 @@ const Footer = () => {
                   <Image
                     src={icon}
                     alt={title}
+                    width={100}  
+    height={100} 
+    
                     className="size-1/3 object-contain"
                    
                   />

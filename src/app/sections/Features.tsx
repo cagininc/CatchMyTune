@@ -4,6 +4,7 @@ import { Upload, Link as LinkIcon } from "lucide-react"; // Lucide icons
 import { ChangeEvent,  useState } from "react";
 import Button from "../components/Button";
 import { AudioLines } from 'lucide-react';
+
 const Features = () => {
   const [file, setFile] = useState<File|null>(null);
   const [spotifyLink, setSpotifyLink] = useState<string>("");
@@ -12,9 +13,30 @@ const Features = () => {
     if (e.target.files) {
       setFile(e.target.files[0]);}};
 
-  const handleUpload = () => {
+  const handleUpload = async () => {
     if (file) {
-      console.log("File uploaded", file.name);
+      const formData= new FormData;
+      formData.append("file",file)
+      //sending file to Db
+      try{
+        const response= await fetch ("http://127.0.0.1:8000/song/upload_song/",{
+          method:"POST",
+          body: formData,
+        })
+        if (response.ok) {
+          const data= await response.json();
+          console.log("File uploaded succesfully",data)
+
+
+        }
+else{console.log("File upload failed")};
+
+
+      }
+      catch(error){
+        console.error("error uploading file",error)
+      }
+
     } else if (spotifyLink) {
       console.log("logged:", spotifyLink);
     }
@@ -40,8 +62,8 @@ const Features = () => {
                 Upload your audio file or enter a Spotify link to analyze its key, tempo, and more.
               </p>
 
-              {/* Spotify Link Girişi */}
-              <div className="mb-6">
+              {/* Spotify Link Girişi  for now its off*/}
+               <div className="mb-6">
                 <div className="flex items-center mb-2">
                   <LinkIcon className="w-6 h-6 mr-2 text-white" />
                   <label htmlFor="spotifyLink" className="text-white font-semibold">
@@ -56,7 +78,7 @@ const Features = () => {
                   placeholder="Enter Spotify link"
                   className="w-full p-2 mb-4 text-black rounded-md"
                 />
-              </div>
+              </div> 
 
               {/*Upload section */}
               <div className="mb-6">
