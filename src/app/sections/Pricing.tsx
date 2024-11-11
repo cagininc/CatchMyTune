@@ -15,7 +15,6 @@ const Pricing = () => {
     <section id="pricing">
       {/* <Element name="pricing"> */}
         <div  className="container">
-          {/* Arka plan görsellerini ve arka plan sınıflarını kaldırdık */}
           <div className="max-w-960 relative mx-auto pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
             <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
               Flexible pricing for teams of all sizes

@@ -1,31 +1,45 @@
 // import { Element, Link as LinkScroll } from "react-scroll";
 import Button from "../components/Button";
+import Image from "next/image";
+import Link from "next/link"; // Next.js Link bileşeni kullanımı
 
 const Hero = () => {
   return (
-    <section className="relative pt-60 pb-40 max-lg:pt-52 max-lg:pb-36 max-md:pt-36 max-md:pb-32">
-        <div className="container">
-          <div className="relative z-2 max-w-512 max-lg:max-w-388">
-            <div className="caption small-3 uppercase text-p4 ">
-              Discover the Secrets of Your Sound with Catch My Tune
-            </div>
-            <h1 className="mb-6 h1 text-p4 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-5xl max-md:leading-12">
-              Explore the Rhythm, Key, and Energy of Your Music
-            </h1>
-            <p className="max-w-440 mb-14 body-1 max-md:mb-10">
-              Unleash the hidden layers of your favorite tracks and elevate your music journey.
-            </p>
-              <Button>Start Exploring</Button>
+    <section className="relative pt-48 pb-40 max-lg:pt-44 max-lg:pb-36 max-md:pt-32 max-md:pb-32">
+      <div className="container">
+        <div
+          className="relative z-2 max-w-512 max-lg:max-w-388"
+          style={{ top: "-70px" }}
+        >
+          <div
+            className="caption small-3 uppercase text-p4"
+            style={{
+              textShadow:
+                "0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.9)", // Glow
+            }}
+          >
           </div>
-
-          <div className="absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res" style={{ marginTop: '30px' }}>
-            <img
-              src="/images/hero3.webp"
-              className="size-1240 max-:h-auto"
-              alt="hero"
-            />
-          </div>
+          <h1 className="mb-4 h1 text-p4 uppercase max-md:mb-4 max-md:text-2xl max-md:leading-8">
+            Explore the Rhythm, Key, and Energy of Your Music
+          </h1>
+          <p className="max-w-440 mb-10 body-1 max-md:mb-8">
+            Unleash the hidden layers of your favorite tracks and elevate your
+            music journey.
+          </p>
+          <Link href="#features">
+          <Button>Start Exploring</Button>
+          </Link>
         </div>
+        <div className="absolute top-8 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res">
+          <Image
+            className="mt-100"
+            src="/images/reelhero.jpeg"
+            alt="hero"
+            width={1230}
+            height={380}
+          />
+        </div>
+      </div>
     </section>
   );
 };

@@ -37,11 +37,11 @@
   }
 
   .h1 {
-    @apply text-[84px] font-black leading-[84px] tracking-[-0.03em];
+    @apply text-[74px] font-black leading-[84px] tracking-[-0.03em];
   }
 
   .h2 {
-    @apply text-[64px] font-black leading-[64px];
+    @apply text-[58px] font-black leading-[64px];
   }
 
   .h3 {
