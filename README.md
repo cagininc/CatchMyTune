@@ -1,8 +1,17 @@
 # 🎶 Catch My Tune
 
-Catch My Tune: An innovative music analysis platform where users can search for their favorite songs, explore detailed analytics, and share insights directly to Instagram Stories.
 
-With Spotify API integration, users can search for any track and access in-depth analysis metrics such as danceability, key, BPM, and more, bringing music insights to life. Results are easily shareable to Instagram Stories, allowing users to connect and share their musical experiences instantly.
+The **Song Analysis** feature of the Catch My Tune application provides a seamless backend process for automatically analyzing songs as soon as they are uploaded to the system. Leveraging **Librosa**, a popular Python library for audio analysis, this feature extracts valuable musical characteristics, including **tempo** and **key**, providing meaningful insights for the user.
+
+Upon uploading a song, the system automatically triggers the analysis pipeline:
+- **Tempo Detection**: The tempo of the song is computed using Librosa's beat tracking capabilities, offering users a precise **beats-per-minute (BPM)** measure for the uploaded track.
+- **Key Detection**: Using chroma feature extraction, the system approximates the **musical key** of the track. This initial implementation gives a basic understanding of the key, suitable for further refinement.
+- **Database Integration**: The analysis results are stored directly in the **PostgreSQL database**, allowing users to access the enriched metadata whenever needed.
+
+The goal is to provide musicians, producers, and enthusiasts with **immediate insights** into their uploaded music, enhancing their experience and helping them understand their tracks in more detail. This feature aligns with industry best practices for automation, using **Django's backend** to ensure each song is processed effectively, while leveraging Librosa for high-quality analysis.
+
+We are continually looking to improve the analysis, aiming to provide more detailed characteristics in future iterations.
+
 
 **You can view the live frontend here**: [Catch My Tune Live](https://main.d22mdftw8wj1aj.amplifyapp.com/)
 
