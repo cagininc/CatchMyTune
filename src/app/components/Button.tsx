@@ -24,7 +24,7 @@ const Button = ({
 }:ButtonProps ) => {
   const Inner = () => (
     <>
-      <span className="relative flex items-center min-h-[60px] px-4 g4 rounded-2xl inner-before group-hover:before:opacity-100 overflow-hidden">
+      <span className="relative flex items-center min-h-[60px] px-4  rounded-2xl inner-before group-hover:before:opacity-100 overflow-hidden">
         <span className="absolute -left-[1px]">
         
         </span>
@@ -40,7 +40,7 @@ const Button = ({
   return href ? (
     <a
       className={clsx(
-        "relative p-0.5 g5 rounded-2xl shadow-500 group",
+        "relative p-0.5 rounded-2xl  group",
         containerClassName,
       )}
       href={href}
@@ -50,7 +50,7 @@ const Button = ({
   ) : (
     <button
       className={clsx(
-        "relative p-0.5 g5 rounded-2xl shadow-500 group",
+        "relative p-0.5 g4 rounded-2xl shadow-500 group",
         containerClassName,
       )}
       onClick={onClick}
