@@ -16,7 +16,10 @@ We are continually looking to improve the analysis, aiming to provide more detai
 **You can view the live frontend here**: [Catch My Tune Live](https://main.d22mdftw8wj1aj.amplifyapp.com/)
 
 ## Screenshots
-![FocusFlow Dashboard](/ui-test.png)
+![hero](/ui-test.png)
+
+![box](/ui-screen.png)
+
 
 
 ## 🛠️ Technologies Used
