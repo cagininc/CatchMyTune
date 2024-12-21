@@ -1,13 +1,13 @@
 # 🎶 Catch My Tune
 
 
-The **Song Analysis** feature of the Catch My Tune application provides a seamless backend process for automatically analyzing songs as soon as they are uploaded to the system. Leveraging **Librosa**, a popular Python library for audio analysis, this feature extracts valuable musical characteristics, including **tempo** and **key**, providing meaningful insights for the user.
+The **Song Analysis** feature of the Catch My Tune application provides a seamless backend process for automatically analyzing songs as soon as they are uploaded to the system. Leveraging **Librosa**, a popular Python library for audio analysis, this feature extracts valuable musical characteristics, including **tempo** and **key**,**loudness**, providing meaningful insights for the user.
 
 Upon uploading a song, the system automatically triggers the analysis pipeline:
 - **Tempo Detection**: The tempo of the song is computed using Librosa's beat tracking capabilities, offering users a precise **beats-per-minute (BPM)** measure for the uploaded track.
 - **Key Detection**: Using chroma feature extraction, the system approximates the **musical key** of the track. This initial implementation gives a basic understanding of the key, suitable for further refinement.
 - **Database Integration**: The analysis results are stored directly in the **PostgreSQL database**, allowing users to access the enriched metadata whenever needed.
-
+-Providing **LUFS-based** loudness data in Catch My Tune enables musicians and producers to ensure consistent audio levels, delivering professional-quality tracks that meet industry standards and enhance the listener experience.
 The goal is to provide musicians, producers, and enthusiasts with **immediate insights** into their uploaded music, enhancing their experience and helping them understand their tracks in more detail. This feature aligns with industry best practices for automation, using **Django's backend** to ensure each song is processed effectively, while leveraging Librosa for high-quality analysis.
 
 We are continually looking to improve the analysis, aiming to provide more detailed characteristics in future iterations.
@@ -31,10 +31,10 @@ Catch My Tune leverages the following technologies:
 - **Tailwind CSS**: Enables rapid, consistent styling with flexibility in design.
 
 ## 📈 Features
-- **Spotify Search Bar**: Allows users to search songs  for analysis.
 - **Audio File Upload**: Allows users to upload audio files for analysis.
-- **Spotify Link Support**: Accepts Spotify links to provide detailed track insights.
 - **Key & Tempo Analysis**: Displays information on key, tempo, and other attributes for each uploaded or linked song.
+- **Loudness Analysis** display loudness data in lufs
+- **Duration**
 
 ## 🔮 Planned Features
 
