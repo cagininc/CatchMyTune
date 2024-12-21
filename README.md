@@ -44,7 +44,8 @@ Catch My Tune leverages the following technologies:
 To enhance the functionality and user experience, here are some additional features planned for future versions:
 
 - **Detailed Audio Insights**: Adding more in-depth metrics like BPM, genre prediction, and mood analysis to expand the audio insights available.
-- **Social Sharing**: Enable users to share their results on social media platforms directly from the app.
+- **More analysis with Ml libraries*:
+- **Train a model**
 - **Mobile Responsiveness**: Optimizing for mobile devices to ensure a smooth experience across all screen sizes.
 
 ## 🌐 Deployment
